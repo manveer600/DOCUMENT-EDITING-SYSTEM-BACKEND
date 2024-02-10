@@ -9,6 +9,8 @@ const cookieOptions = {
     secure: true,
     sameSite: 'none'
 }
+
+
 export const signup = async (req, res) => {
     const { email, password, confirmPassword, id: documentId } = req.body;
     if (!email || !password || !confirmPassword) {
